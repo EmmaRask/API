@@ -44,7 +44,7 @@ console.log("Fetching spells from:", url);
 
             spellBox.textContent = "";
 
-//SPELKORT /SAFTEY
+//SPELLKORT /SAFTEY
 
 //titel
     const title = document.createElement("h2");
@@ -94,6 +94,11 @@ saveBtn.addEventListener("click", () => {
                     console.log(`Saved: ${randomSpell.name}`);
 
                     renderSpellbook();
+                    saveBtn.classList.add("flash-save");
+                    setTimeout(() => {
+                    saveBtn.classList.remove("flash-save");
+                    }, 500);
+
                 } else {
                     console.log("Already saved!");
                 }
@@ -115,9 +120,9 @@ toggleBtn.addEventListener("click", () => {
 
     if (isOpen) {
         spellbookContent.style.display = "none";
-        toggleBtn.textContent = "Show Spellbook";
+      
     } else {
         spellbookContent.style.display = "block";
-        toggleBtn.textContent = "Hide Spellbook";
+        
     }
 });

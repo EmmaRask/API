@@ -39,7 +39,7 @@ select {
     gap: 5rem;
     margin-bottom: 1rem;
     border-style: outset;
-    box-shadow: 0 0.5rem 0 rgb(186, 185, 185);
+    box-shadow: 0 0 10px #f6e29b, 0 0 15px #d4b454;
 }
 
 .BtnSubmit:hover {
@@ -55,15 +55,16 @@ select {
 .spell-card {
     margin-top: 1rem;
     padding: 2rem;
-    width:42rem;
-    background-color: rgba(219, 211, 165, 0.9);
-    border: 2px solid #4a6028;
-    display: none; 
-    width: 90%; 
-    max-width: 500px; 
-    max-height: 60vh; 
-    overflow-y: auto; 
-
+    background: rgb(219, 211, 165);
+    border: 2px solid #8b6b3a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4),
+    inset 0 0 20px rgba(0,0,0,0.25);
+    width: 90%;
+    max-width: 500px;
+    max-height: 60vh;
+    overflow-y: auto;
+    display: none;
 }
 
 .spell-btn {
@@ -76,10 +77,11 @@ select {
     gap: 5rem;
     margin-bottom: 1rem;
     border-style: outset;
-    box-shadow: 0 0.5rem 0 #deb955(251, 16, 16);
+    box-shadow: 0 0 10px #e0c269;
+
 }
 .spell-btn:hover {
-    background-color: #2d2c06;
+    background-color: #e7ab08;
     transform: scale(1.05);
     color: whitesmoke;
 }
@@ -91,6 +93,7 @@ select {
 #spellbook-content {
     margin-top: 1rem;
     transition: all 0.3s ease-in-out;
+    display: none;
 }
 
 #toggle-spellbook {
@@ -101,3 +104,98 @@ select {
 
 }
 
+#spellbook-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: auto;
+    padding: 0.5rem;
+    display: none;
+    background-color:rgba(219, 211, 165, 0.9);
+}
+
+.book-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #4a6028;
+    background-color: rgb(219, 211, 165);
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%234a6028" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 4v16a1 1 0 0 0 1 1h11v-2H8V4h10V2H7a1 1 0 0 0-1 1z"/></svg>');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 40px #f6e29b, 0 0 30px #d4b454;
+
+}
+
+.book-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 35px #f6e29b, 0 0 30px #d4b454;
+}
+
+.book-btn:active {
+    transform: scale(0.9);
+}
+
+.flash-save {
+    background-color: #acc37b !important; 
+    color: #d2b639 !important;           
+    border-color: #efb70f !important;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Tablet / iPad */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .containerDnD {
+        padding: 3rem 4rem;
+    }
+
+    .spell-card {
+        max-width: 450px;
+        max-height: 55vh;
+    }
+
+    #spellbook-container {
+        width: 60px;  /* lite större än mobil */
+        height: 60px;
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.4rem;
+    }
+
+    .book-btn {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Desktop / större skärmar */
+@media screen and (min-width: 1025px) {
+    
+    .containerDnD {
+        padding: 5rem 6rem;
+    }
+
+    .spell-card {
+        max-width: 500px;
+        max-height: 60vh;
+    }
+
+    #spellbook-container {
+        width: auto;
+        height: auto;
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.5rem;
+        border-radius: 8px;
+        background-color: rgba(219, 211, 165, 0.9);
+    }
+
+    .book-btn {
+        width: 70px;
+        height: 70px;
+    }
+}
