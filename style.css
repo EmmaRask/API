@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+  background-image: url(/IMG/europeana-YnicXj-4qLU-unsplash.jpg);
+  background-size: cover;
+  font-family: fantasy;
+}
+
+.containerDnD {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height:100vh;
+    padding: 5rem;
+    overflow-y: auto; 
+    border-style:double;
+}
+
+select {
+    background-color: rgb(219, 211, 165);
+    border: 2px solid #4a6028;
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    border-style: outset;
+    cursor: pointer;
+    
+}
+
+.BtnSubmit {
+    margin-top: 0.5rem;
+    padding:0.4rem 1rem;
+    border: 2px solid #f5f3f0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: rgb(191, 225, 238);
+    gap: 5rem;
+    margin-bottom: 1rem;
+    border-style: outset;
+    box-shadow: 0 0.5rem 0 rgb(186, 185, 185);
+}
+
+.BtnSubmit:hover {
+    background-color: #4a6028;
+    transform: scale(1.05);
+    color: whitesmoke;
+}
+
+.BtnSubmit:active {
+    transform: scale(0.95);
+}
+
+.spell-card {
+    margin-top: 1rem;
+    padding: 2rem;
+    width:42rem;
+    background-color: rgba(219, 211, 165, 0.9);
+    border: 2px solid #4a6028;
+    display: none; 
+    width: 90%; 
+    max-width: 500px; 
+    max-height: 60vh; 
+    overflow-y: auto; 
+
+}
+
+.spell-btn {
+    margin-top: 0.5rem;
+    padding:0.4rem 1rem;
+    border: 2px solid #eaa40e;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #deb955;
+    gap: 5rem;
+    margin-bottom: 1rem;
+    border-style: outset;
+    box-shadow: 0 0.5rem 0 #deb955(251, 16, 16);
+}
+.spell-btn:hover {
+    background-color: #2d2c06;
+    transform: scale(1.05);
+    color: whitesmoke;
+}
+
+.spell-btn:active {
+    transform: scale(0.95);
+}
+
+#spellbook-content {
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#toggle-spellbook {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    justif;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spellsfordays</title>
+</head>
+<body>
+    <main>
+        <div class="containerDnD">
+            <select name="ClassDnD" id="class-select">
+                <option value="">Chose Your Class</option>
+                <option value="Bard">Bard</option>
+                <option value="Cleric">Cleric</option>
+                <option value="Druid">Druid</option>
+                <option value="Ranger">Ranger</option>
+                <option value="Sorcerer">Sorcerer</option>
+                <option value="Warlock">Warlock</option>
+                <option value="Wizard">Wizard</option>
+            </select>
+
+            <button type="Submit" class="BtnSubmit">Let's Make Bad Decisions!</button>
+            
+            <div id="spell-display" class="spell-card">
+                <button id="save-spell" class="spell-btn">Save to Spellbook</button>
+            </div>
+        </div>    
+
+            <div id="spellbook-container" class="spell-card" style="display:none;">
+                
+                <button id="toggle-spellbook" class="spell-btn">Show Spellbook</button>
+
+                 <div id="spellbook-content" style="display: none;">
+                    <h2>Your Spellbook</h2>
+                    <ul id="spellbook-list"></ul>
+                 </div>   
+            </div>
+       
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
