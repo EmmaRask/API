@@ -109,20 +109,17 @@ saveBtn.addEventListener("click", () => {
 
 renderSpellbook();
 
-// ===============================
+
 //  C O L L A P S I B L E  S P E L L B O O K
-// ===============================
 const toggleBtn = document.getElementById("toggle-spellbook");
 const spellbookContent = document.getElementById("spellbook-content");
+const spellbookContainer = document.getElementById("spellbook-container");
 
 toggleBtn.addEventListener("click", () => {
     const isOpen = spellbookContent.style.display === "block";
 
-    if (isOpen) {
-        spellbookContent.style.display = "none";
-      
-    } else {
-        spellbookContent.style.display = "block";
-        
-    }
+   
+    spellbookContent.style.display = isOpen ? "none" : "block";
+
+    spellbookContainer.classList.toggle("open");
 });
