@@ -5,6 +5,8 @@ Your screenshot here showing the UI on mobile or desktop.
 🚀 Overview
 SpellsForDays is a web app that fetches spells from the Open5e API. Users can select a class, generate random spells, and save them to a collapsible spellbook.
 Focus: mobile-first design, responsive layout, and smooth interactions.
+
+
 ✅ Features
 Must-Have (Completed)
 Fetch external data from Open5e API.
@@ -17,6 +19,8 @@ Collapsible spellbook that expands/collapses.
 Save spells using localStorage.
 Responsive behavior for mobile, tablet, desktop.
 Simple CSS transitions for spellbook expansion.
+
+
 📌 How to Use
 Select a class from the dropdown.
 Click "Let's Make Bad Decisions!" to generate a spell.
@@ -27,16 +31,21 @@ Saved spells persist between sessions thanks to localStorage.
 HTML5 / CSS3 (with variables and media queries)
 JavaScript (ES6)
 Open5e Public API
+
+
 📁 Project Structure
 /SpellsForDays
 ├─ index.html
 ├─ style.css
 ├─ script.js
 └─ README.md
+
+
 ✨ Future Improvements
 Add search/filter for spells.
 Integrate multiple APIs (monsters, items).
 More polished animations for cards and spellbook.
 Deploy on GitHub Pages.
+
 👤 Author
 [EmmaRask]
