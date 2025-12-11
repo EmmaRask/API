@@ -160,12 +160,11 @@ select {
     border: 2px solid #4a6028;
     background-color: var(--bg-main);
     cursor: pointer;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="%234a6028" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 4v16a1 1 0 0 0 1 1h11v-2H8V4h10V2H7a1 1 0 0 0-1 1z"/></svg>');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.2s ease;
-    box-shadow: 0 0 50px #f6e29b, 0 0 50px #d4b454;
+    box-shadow: 0 0 90px #f6e29b, 0 0 90px #d4b454;
 
 }
 
